@@ -1,0 +1,70 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  height: 100%;
+  color: antiquewhite;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin-bottom: 6rem;
+  color: #666;
+}
+
+.input_set {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+input {
+  width: 8rem;
+  height: 3rem;
+}
+
+.circle {
+  margin: 0 auto;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: .4em .8em;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #444;
+  cursor: pointer;
+  color: antiquewhite;
+}
+button:hover {
+  opacity: .75
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
